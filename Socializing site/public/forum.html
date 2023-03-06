@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/postMe.css">
+  <script src="https://kit.fontawesome.com/472a08e99c.js" crossorigin="anonymous"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+</head>
+<body>
+
+<div class="header">
+    <img src="logo.png" height=80px width=100px>
+</div>
+
+<div class="topnav">
+  
+  <div style="color:white; display:inline-block;" id="forumname">postname</div>
+
+  
+  <button class="button" id="addPostButton" style="float:right">Add Post</button>
+  <div id="id00" class="popUp">
+  
+    <form class="form animate" >
+      <img src="logo.png" height=100px width=120px >
+      <button type="button" class="cancelbtn" id="cancelAP" right><i class="fa-solid fa-circle-xmark"></i></button>
+      <div class="container">
+        <label for="Title" ><b>Add title</b></label>
+        <input id="addposttitle" type="text"  placeholder="Enter Title" name="Title" required>
+        <label for="Description" ><b>Add text</b></label>
+        <input id="addpostdescription" type="text"  placeholder="Enter Description" name="Description" required>
+  
+        <label for="Image"><b>Add the image that you want to be posted</b></label>
+        
+        <!-- <input id="addpostcontent" type="file" id="img" name="img" accept="image/*"> -->
+        <input id="addpostcontent" type="text"  placeholder="Enter content name" name="Content" required>
+      
+        <button id="addPost" class ="logInButton">Add Post</button>
+        
+      </div>
+  
+      <div class="container" style="background-color:#f1f1f1 ">
+        
+        
+      </div>
+    </form>
+  </div>
+  <button class="button" id="logOutButton" style="float:right">LogOut</button>
+  <button class="button" id="logInButton" style="float:right">LogIn</button>
+  <div id="id01" class="popUp">
+  
+    <form class="form animate" >
+      <img src="logo.png" height=100px width=120px >
+      <button type="button" class="cancelbtn" id="cancelLI" right><i class="fa-solid fa-circle-xmark"></i></button>
+      <div class="container">
+        <label for="userName" ><b>Username</b></label>
+        <input id="usernameli" type="text"  placeholder="Enter Username" name="userName" required>
+  
+        <label for="password"><b>Password</b></label>
+        <input id="passwordli" type="password" placeholder="Enter Password" name="password" required>
+          
+        <button id="logIn" class ="logInButton">Login</button>
+        
+      </div>
+  
+      <div class="container" style="background-color:#f1f1f1 ">
+        
+        
+      </div>
+    </form>
+  </div>
+  <button class=button id="signUpButton" style="float:right">SignUp</button>
+  <div id="id02" class="popUp">
+  
+    <form class="form animate" >
+      <img src="logo.png" height=100px width=120px >
+      <button type="button" class="cancelbtn" id="cancelSU" right><i class="fa-solid fa-circle-xmark"></i></button>
+      <div class="container">
+        <label for="email" ><b>Email</b></label>
+        <input id="emailsu" type="text"  placeholder="Enter Email" name="email" required>
+
+        <label for="userName" ><b>Username</b></label>
+        <input id="usernamesu" type="text"  placeholder="Enter Username" name="userName" required>
+  
+        <label for="password"><b>Password</b></label>
+        <input id="passwordsu" type="password" placeholder="Enter Password" name="password" required>
+          
+        <button id="signUp" class="logInButton">Create Account</button>
+        
+      </div>
+  
+      <div class="container" style="background-color:#f1f1f1 ">
+        
+        
+      </div>
+    </form>
+  </div>
+</div>
+
+<div class="row">
+  <div class="rightcolumn" id="posts">
+    <div class="card">
+      <h2>Post Title</h2>
+      <h5>Post date</h5>
+      <div class="fakeimg" style="height:200px;">Image</div>
+      <p>Some text..</p>
+    </div>
+    <div class="card">
+      <h2>Post Title</h2>
+      <h5>Post date</h5>
+      <div class="fakeimg" style="height:200px;">Image</div>
+      <p>Some text..</p>
+    </div>
+    <div class="card">
+      <h2>Post Title</h2>
+      <h5>Post date</h5>
+      <div class="fakeimg" style="height:200px;">Image</div>
+      <p>Some text..</p>
+    </div>
+    <div class="card">
+      <h2>Post Title</h2>
+      <h5>Post date</h5>
+      <div class="fakeimg" style="height:200px;">Image</div>
+      <p>Some text..</p>
+    </div>
+  </div>
+  <div class="leftcolumn">
+    <div class="card">
+      <label id = "shownName"><b>Account details</b></label>
+      <div class="fakeimg1" style="height:100%;"><img style="width:90% ;" src="ppicture.png" ></div>
+      <p>Welcome to PostMe</p>
+    </div>
+    <div class="card">
+      <h3>Popular Post</h3>
+      <a href = "http://localhost:8080/post.html?postid=0&forumid=0&userid=0"><div class="fakeimg1"><p><img style="width:90% ;" src="messi.png"></p></div> </a>
+      <a href = "http://localhost:8080/post.html?postid=2&forumid=0&userid=0"><div class="fakeimg1"><p><img style="width:90% ;" src="wed.png"></p></div> </a>
+      <a href = "http://localhost:8080/post.html?postid=1&forumid=0&userid=0"><div class="fakeimg1"><p><img style="width:90% ;" src="drake.png"></p></div> </a>
+    </div>
+  </div>
+</div>
+
+<script src="js/postMe.js"></script>
+</body>
+</html>
+
+
