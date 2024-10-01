@@ -1,0 +1,14 @@
+<div class="login-container">
+  <h2>Login</h2>
+  <form>
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" required>
+
+    <label for="password">Password:</label>
+    <input type="password" id="password" name="password">
+
+    <button type="submit" (click)="login()">Login</button>
+  </form>
+
+  <div class="register" (click)="goToRegister()">Sign Up</div>
+</div>

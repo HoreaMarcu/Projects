@@ -1,0 +1,125 @@
+.wholePageAdmin {
+  position: relative;
+  font-family: Arial, sans-serif;
+  text-align: center;
+  padding: 1rem;
+  background: #fff;
+  border-radius: 0.3125rem;
+  box-shadow: 0 0.125rem 0.3125rem rgba(0, 0, 0, 0.2);
+}
+
+.seeUsers {
+  margin: 0.625rem;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.seeDevices {
+  margin: 0.625rem;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.addDevice {
+  margin: 0.625rem;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.updateDevice{
+  margin: 0.625rem;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1rem 0;
+  border: 0.0625rem solid #ccc;
+}
+
+thead th {
+  background-color: #007BFF;
+  color: #fff;
+  font-weight: bold;
+  padding: 0.5rem;
+}
+
+tbody tr:nth-child(odd) {
+  background-color: #f4f4f4;
+}
+
+tbody tr:nth-child(even) {
+  background-color: #fff;
+}
+
+tbody td {
+  padding: 0.5rem;
+}
+
+tbody td:last-child {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+
+form {
+  max-width: 25rem;
+  margin: 0 auto;
+  padding: 1.25rem;
+  background-color: #f7f7f7;
+  border: 0.0625rem solid #e2e2e2;
+  border-radius: 0.3125rem;
+  box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.1);
+}
+
+label {
+  display: block;
+  margin-bottom: 0.3125rem;
+  font-weight: bold;
+}
+
+input[type="text"] {
+  width: 100%;
+  padding: 0.5rem;
+  margin-bottom: 0.9375rem;
+  border: 0.0625rem solid #ccc;
+  border-radius: 0.25rem;
+}
+
+button[type="submit"] {
+  display: inline-block;
+  padding: 1.25rem 2.5rem;
+  background-color: #007BFF;
+  color: #fff;
+  border: none;
+  border-radius: 0.25rem;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+button[type="submit"]:hover {
+  background-color: #0056b3;
+}
+
+.logout-button {
+  position: absolute;
+  float: right;
+  width: max-content;
+  cursor: pointer;
+  padding: 0.5rem;
+  background-color: #f5f5f5;
+  color: #b82d2d;
+  border: none;
+  border-radius: 0.25rem;
+  font-weight: normal;
+  font-size: 0.8rem;
+  bottom: 1rem;
+  right: 0.5rem;
+}
+
+.logout-button:hover {
+  background-color: #e0e0e0;
+}
+

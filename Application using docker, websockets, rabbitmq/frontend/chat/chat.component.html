@@ -1,0 +1,15 @@
+<div class="chat-container">
+  <div *ngFor="let message of messages" class="message-container">
+    <div class="sender">Sender: {{ message.senderId }}</div>
+    <div class="receiver">Receiver: {{ message.receiverId }}</div>
+    <div><strong>Message:</strong> {{ message.message }}</div>
+    <div class="seen-status" *ngIf="message.seen">Seen</div>
+    <div class="not-seen-status" *ngIf="!message.seen">Not Seen</div>
+    <hr>
+  </div>
+</div>
+<form (ngSubmit)="sendMessage()" #messageForm="ngForm">
+  <label for="newMessage">Type your message:</label>
+  <input type="text" id="newMessage" name="newMessage" [(ngModel)]="newMessageText" required>
+  <button type="submit" [disabled]="!newMessageText">Send</button>
+</form>

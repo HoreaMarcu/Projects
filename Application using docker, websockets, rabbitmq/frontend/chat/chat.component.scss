@@ -1,0 +1,97 @@
+.chat-container {
+  width: 80%;
+  margin: auto;
+}
+
+/* Style for each individual message */
+.message-container {
+  border: 1px solid #ddd;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+/* Style for message sender and receiver */
+.sender, .receiver {
+  font-weight: bold;
+}
+
+/* Style for the 'Seen' status */
+.seen-status {
+  color: #008000; /* Green color for 'Seen' */
+}
+
+.not-seen-status {
+  color: #ff0000; /* Red color for 'Not Seen' */
+}
+
+/* Horizontal line between messages */
+hr {
+  border: none;
+  border-top: 1px solid #ddd;
+  margin: 5px 0;
+}
+
+.chat-container {
+  width: 80%;
+  margin: auto;
+}
+
+/* Style for each individual message */
+.message-container {
+  border: 1px solid #ddd;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+/* Style for message sender and receiver */
+.sender, .receiver {
+  font-weight: bold;
+}
+
+/* Style for the 'Seen' status */
+.seen-status {
+  color: #008000; /* Green color for 'Seen' */
+}
+
+.not-seen-status {
+  color: #ff0000; /* Red color for 'Not Seen' */
+}
+
+/* Horizontal line between messages */
+hr {
+  border: none;
+  border-top: 1px solid #ddd;
+  margin: 5px 0;
+}
+
+/* Style for the message input form */
+form {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  margin-bottom: 5px;
+}
+
+input {
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+button {
+  padding: 8px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:disabled {
+  background-color: #dddddd;
+  cursor: not-allowed;
+}

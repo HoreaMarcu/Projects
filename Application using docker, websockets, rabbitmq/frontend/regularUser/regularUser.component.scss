@@ -1,0 +1,69 @@
+.wholePageRegularUser {
+  position: relative;
+  font-family: Arial, sans-serif;
+  text-align: center;
+  padding: 1rem;
+  background: #fff;
+  border-radius: 0.3125rem;
+  box-shadow: 0 0.125rem 0.3125rem rgba(0, 0, 0, 0.2);
+}
+
+.seeDevices {
+  margin: 0.625rem;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1rem 0;
+  margin-bottom: 3rem;
+  border: 0.0625rem solid #ccc;
+}
+
+thead th {
+  background-color: #007BFF;
+  color: #fff;
+  font-weight: bold;
+  padding: 0.5rem;
+}
+
+tbody tr:nth-child(odd) {
+  background-color: #f4f4f4;
+}
+
+tbody tr:nth-child(even) {
+  background-color: #fff;
+}
+
+tbody td {
+  padding: 0.5rem;
+}
+
+tbody td:last-child {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.logout-button {
+  position: absolute;
+  float: right;
+  width: max-content;
+  cursor: pointer;
+  padding: 0.5rem;
+  background-color: #f5f5f5;
+  color: #b82d2d;
+  border: none;
+  border-radius: 0.25rem;
+  font-weight: normal;
+  font-size: 0.8rem;
+  bottom: 1rem;
+  right: 0.5rem;
+}
+
+.logout-button:hover {
+  background-color: #e0e0e0;
+}
+

@@ -1,0 +1,21 @@
+<div class="registration-container">
+  <h2>Register</h2>
+  <form>
+    <label for="nameInput">Name:</label>
+    <input type="text" id="nameInput" name="nameInput" required>
+
+    <label for="passwordInput">Password:</label>
+    <input type="password" id="passwordInput" name="passwordInput" required>
+
+    <label for="addressInput">Address:</label>
+    <input type="text" id="addressInput" name="addressInput" required>
+
+    <label for="ageInput">Age:</label>
+    <input type="number" id="ageInput" name="ageInput" required>
+
+    <label for="adminRoleInput">Admin Role:
+    <input type="checkbox" id="adminRoleInput" name="adminRoleInput"></label>
+
+    <button type="submit" (click)="insertUser()">Register</button>
+  </form>
+</div>

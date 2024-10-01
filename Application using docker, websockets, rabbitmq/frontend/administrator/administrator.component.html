@@ -1,0 +1,79 @@
+<div class="wholePageAdmin">
+  <div class="seeUsers" (click)="seeAllUsers = !seeAllUsers">See all users</div>
+
+  <table *ngIf="seeAllUsers">
+    <thead>
+    <tr>
+      <th>ID</th>
+      <th>Name</th>
+      <th>Actions</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr *ngFor="let user of users" class="user">
+      <td (click)="goToChatWithUser(user.id)" style="cursor: pointer">{{user.id}}</td>
+      <td>{{user.name}}</td>
+      <td (click)="deleteUser(user.id)">Delete</td>
+    </tr>
+    </tbody>
+  </table>
+
+  <div class="seeDevices" (click)="seeAllDevices = !seeAllDevices">See all devices</div>
+
+  <table *ngIf="seeAllDevices">
+    <thead>
+    <tr>
+      <th>ID</th>
+      <th>Description</th>
+      <th>Actions</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr *ngFor="let device of devices" class="user">
+      <td>{{device.id}}</td>
+      <td>{{device.description}}</td>
+      <td (click)="deleteDevice(device.id)">Delete</td>
+    </tr>
+    </tbody>
+  </table>
+
+  <div class="addDevice" (click)="addDeviceView = !addDeviceView">Add Device</div>
+
+  <form *ngIf="addDeviceView">
+    <label for="deviceDescription">Device Description:</label>
+    <input type="text" id="deviceDescription" name="deviceDescription" required>
+    <br>
+    <label for="maxHourlyEnergyConsumption">Device MaxHourlyEnergyConsumption:</label>
+    <input type="text" id="maxHourlyEnergyConsumption" name="maxHourlyEnergyConsumption" required>
+    <br>
+    <label for="userID">Device UserID:</label>
+    <input type="text" id="userID" name="userID" required>
+
+    <button type="submit" (click)="addDevice()">Add Device</button>
+  </form>
+
+  <div class="updateDevice" (click)="updateDeviceView = !updateDeviceView">Update Device</div>
+
+  <form *ngIf="updateDeviceView">
+    <label for="deviceIdUpdate">Device Id:</label>
+    <input type="text" id="deviceIdUpdate" name="deviceIdUpdate" required>
+    <br>
+    <label for="deviceDescriptionUpdate">Device Description:</label>
+    <input type="text" id="deviceDescriptionUpdate" name="deviceDescriptionUpdate" required>
+    <br>
+    <label for="maxHourlyEnergyConsumptionUpdate">Device MaxHourlyEnergyConsumption:</label>
+    <input type="text" id="maxHourlyEnergyConsumptionUpdate" name="maxHourlyEnergyConsumptionUpdate" required>
+    <br>
+    <label for="userIDUpdate">Device UserID:</label>
+    <input type="text" id="userIDUpdate" name="userIDUpdate" required>
+
+    <button type="submit" (click)="updateDevice()">Update Device</button>
+  </form>
+
+  <div class="logout-button" (click)="logout()">Logout</div>
+
+
+
+  <app-websocket></app-websocket>
+  <app-websocket2></app-websocket2>
+</div>
